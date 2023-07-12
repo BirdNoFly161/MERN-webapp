@@ -1,0 +1,40 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+  background-color: slateblue;
+}
+
+.navbar-links{
+  display: flex;
+  list-style: None;
+}
+
+.navbar-element{
+  padding: .5em;
+  font-size: 1.5em;
+}
+
+.navbar-element:hover{
+  background-color: brown;
+  border-radius: .5em;
+}
