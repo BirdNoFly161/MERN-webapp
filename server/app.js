@@ -3,6 +3,21 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+/*const {MongoClient} = require("mongodb");
+const uri = "mongodb://127.0.0.1:27017";
+const client = new MongoClient(uri);
+
+async function run(){
+    const database = client.db('web-app-db');
+    console.log("connected to database successfully")
+    const users_collection = database.collection('users');
+    const users = await users_collection.find({}).toArray()
+    console.log(users)
+}
+
+run().catch(console.dir)
+*/
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 

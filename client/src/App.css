@@ -32,9 +32,12 @@ body {
 .navbar-element{
   padding: .5em;
   font-size: 1.5em;
+  transition: color .25s ease-in-out;
 }
 
 .navbar-element:hover{
-  background-color: brown;
-  border-radius: .5em;
+  color: brown;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: brown;
 }
