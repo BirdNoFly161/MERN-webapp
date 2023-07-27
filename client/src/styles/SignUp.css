@@ -1,0 +1,84 @@
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    margin: auto;
+
+    width: min(100vw, 25em);
+    padding: 2em;
+    border-radius: 0.3em;
+}
+.input-field {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 1em;
+}
+.input-field input {
+    position: relative;
+    all: unset; 
+    border-bottom: 0.1em solid rgba(0, 0, 255, 0.3);
+    padding: 0.5em;
+}
+
+.line {
+    position: absolute;
+    width: 0;
+    height: 0.1em;
+    top: 100%;
+    left: 0;
+    background-color: blue;
+    transition: width 500ms ease-in-out;
+}
+
+.input-field input:focus ~ .line{
+    width: 100%;
+}
+
+.input-field label{
+    --color-opacity : 0.7;
+    position: absolute;
+    font-weight: bold;
+    color: rgba(0, 0, 255, var(--color-opacity));
+    pointer-events: none;
+    top: 0;
+    left: 0.5em;  
+    transition: top 200ms ease-out, scale 100ms ease-in;
+}
+
+.input-field input:focus ~ label {
+    --color-opacity : 1;
+    top: -50%;
+    scale: 1.01;
+}
+
+.signup-form > label{
+    padding: .5em;
+}
+
+/* .input-validation{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+
+.input-validation{
+    padding: .25em;
+    border-radius: .25em;
+} */
+
+input[type="password"].valid, textarea{
+    background-color: lightgreen;
+}
+input[type="password"].invalid, textarea{
+    background-color: lightcoral;
+}
+
+.valid{
+    box-shadow: 0px 0px .25em .25em lightgreen;
+}
+
+.invalid{
+    box-shadow: 5px 5px 5px lightcoral, -5px -5px 5px lightcoral;
+}
