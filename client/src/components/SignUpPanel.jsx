@@ -4,7 +4,7 @@ import "../styles/SignUp.css"
 import { isNotValidPassword, isNotValidEmail } from '../controllers/regexes';
 import CorrectIcon from '../correct.svg'
 
-function SignUpPanel(props) {
+export default function SignUpPanel(props) {
 
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
