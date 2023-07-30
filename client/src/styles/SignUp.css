@@ -1,0 +1,92 @@
+.signup-form{
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(5, 1fr);
+
+    row-gap: 3.5em;
+
+    margin: auto;
+
+    background-color: plum;
+
+    border: solid slateblue 3px;
+    border-radius: 1em;
+
+    width: fit-content;
+    padding: 1em;
+
+
+
+}
+
+.signup-form label{
+    padding: .5em;
+    font-size: 1.25em;
+}
+
+input{
+    font-size: 1.25em;
+    border : 0;
+    border-bottom: 4px slateblue solid;
+    padding: .25em;
+    transition: background-color .1s ease-in-out;
+}
+
+.input-field{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.input-field > input{
+    width: 100%;
+    height: 100%;
+}
+
+.input-validation{
+    font: .5em;
+    position: absolute;
+    top: 3em;
+    border-radius: .25em;
+    padding: .25em;
+    border: 2px solid;
+    margin: 0;
+}
+
+.input-validation-icon{
+    position: absolute;
+    top: .5em;
+    left: 21em;
+}
+
+input[type="text"].valid{
+    background-color: lightgreen;
+}
+
+input[type="text"].invalid{
+    background-color: lightcoral;
+}
+
+.input-validation.valid{
+    box-shadow: 0 0 .1em .1em lightgreen;
+    border-color: lightgreen;
+}
+
+.input-validation.invalid{
+    box-shadow: 0 0 .1em .1em lightcoral;
+    border-color: lightcoral;
+}
+
+.button.signup{
+    font-size: 1.25em;
+    background-color: slateblue;
+    
+    border: 0px;
+    border-radius: .25em;
+
+    padding: .5em 1em;
+    grid-column: 1/3;
+}
