@@ -3,6 +3,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
+<<<<<<< Updated upstream
 
 /*const {MongoClient} = require("mongodb");
 const uri = "mongodb://127.0.0.1:27017";
@@ -18,6 +19,8 @@ async function run(){
 
 run().catch(console.dir)
 */
+=======
+>>>>>>> Stashed changes
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
